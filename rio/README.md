@@ -329,7 +329,7 @@ basic idea is:
 * If something can fail, and you want people to deal with that failure
   every time (e.g., `lookup`), then return a `Maybe` or `Either`
   value.
-* If the use will sometimes not want to deal with it, then use
+* If the user will sometimes not want to deal with the failure, then use
   exceptions. In the case of pure code, use a `MonadThrow`
   constraint. In the case of `IO` code: use runtime exceptions via
   `throwIO` (works in the `RIO` monad too).
